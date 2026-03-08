@@ -8,53 +8,73 @@
     <style>
         body {
             background-color: #F5F5FD;
+            font-family: Arial;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
         }
 
         .card {
             background-color: #FFFFFF;
-            padding: 20px;
+            padding: 20px 20px 40px 20px;
             border-radius: 20px;
+            width: 30vw;
+            height: max-content;
+            box-shadow: 0px 0px 10px 10px #D1D0F5;
         }
 
         .progress-circle {
-            border: 3px solid #D1D0F5;
-            display: inline-block;
-            padding: 10px;
+            border: 0.4em solid #D1D0F5;
+            padding: 1em;
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            line-height: 20px;
+            width: 2em;
+            height: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-weight: bolder;
+            box-shadow: 0px 0px 5px 5px #F5F5FD;
         }
-    </style>
 
+        .card-body {
+            display: flex;
+            gap: 20px;
+            align-items: flex-end;
+           
+        }
+
+        
+    </style>
 </head>
 
 <body>
-
-    <div class="card">
-
-        <h2>Your progress</h2>
-
-        <div class="progress-circle">93%</div>
-        <div class="help-text">
-            <h2>32 of 42 complete</h2>
-            Finish course to get certificate
+    <div class="container">
+        <div class="card">
+            <h2>Your progress</h2>
+            <div class="card-body">
+                <div class="progress-circle">
+                    <span>93%</span>
+                </div>
+                <div class="help-text">
+                    <p style="font-size: 20px;margin:0;font-weight: bolder;">32 of 42 complete</p>
+                    <p style="margin-top:10px;">
+                    Finish course to get certificate</p>
+                </div>
+            </div>
         </div>
-
     </div>
-
-    <div>
-
+    <div style="text-align: center;">
         <p>
-            Credits:
-            <br>
-            Design Inspiration: <a href="https://www.uidesigndaily.com/posts/progress" target="_blank">UI Design Daily - Progress</a>
+            Design Inspiration: <a href="https://www.uidesigndaily.com/posts/progress" target="_blank">Progress - By UI
+                Design Daily
+            </a>
         </p>
-
     </div>
-
 </body>
 
 </html>
