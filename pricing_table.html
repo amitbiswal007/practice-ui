@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Pricing table sample</title>
+    <style>
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-color: #F7F9FD;
+            text-align: center;
+            min-height: 95vh;
+            padding-top: 5vh;
+        }
+
+        .credit-card-message {
+            background-color: #FBFCFE;
+            display: inline-block;
+            border-radius: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .card-container {
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #FFFFFF;
+            width: 20vw;
+            height: auto;
+            min-height: 40vh;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 0px #D9E2EC;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+
+        }
+
+        .card>.plan {
+
+            font-weight: bold;
+
+        }
+
+        .card>.price {
+            font-size: 25px;
+            font-weight: bold;
+
+        }
+
+        .card>.features {
+            text-align: left;
+            color: #394057;
+            font-size: smaller;
+        }
+
+        .card>.features>li {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background-color: #F7F9FD;
+            border: 1px solid #D9E2EC;
+            border-radius: 5px;
+            padding: 10px 20px 10px 20px;
+            margin-top: auto;
+            margin-bottom: 10px;
+            font-size: small;
+        }
+
+        .btn:hover {
+            background-color: #e343ae;
+            cursor: pointer;
+            color: #FFF
+        }
+
+        .primary {
+            background-color: #4365E3;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Choose your plan</h1>
+        <p>
+            Be the first to know when boardme launches. Early access users will receive <br>an extended free trial and
+            early bird pricing options
+        </p>
+        <br>
+        <p>
+            Billed monthly
+            <input type="checkbox" checked>
+            Billed annually
+        </p>
+
+        <div class="card-container">
+            <div class="card">
+                <p class="plan">Free
+                </p>
+                <p class="price">
+                    $0
+                </p>
+                <ul class="features">
+                    <li>50 requests</li>
+                    <li>3 projects</li>
+                    <li>Extended free trial</li>
+                </ul>
+                <div class="btn">Get Started</div>
+            </div>
+            <div class="card">
+
+                <p class="plan">Standard
+                </p>
+                <p class="price">
+                    $99/month
+                </p>
+                <ul class="features">
+                    <li>500 requests</li>
+                    <li>10 projects</li>
+                    <li>Extended free trial</li>
+                </ul>
+                <div class="btn primary">Get Started</div>
+            </div>
+            <div class="card">
+
+                <p class="plan"> Enterprise
+                </p>
+                <p class="price">
+                    Let's Talk
+                </p>
+                <ul class="features">
+                    <li>15000 requests</li>
+                    <li>Unlimited projects</li>
+                    <li>Extended free trial</li>
+                </ul>
+
+                <div class="btn">Get Started</div>
+
+            </div>
+        </div>
+
+        <p class="credit-card-message">
+            No credit card required
+        </p>
+
+    </div>
+    <div style="text-align: center;">
+        <p>
+            Design Inspiration: <a href="https://www.uidesigndaily.com/posts/sketch-pricing-table-price-day-830"
+                target="_blank">Pricing Table - By UI
+                Design Daily
+            </a>
+        </p>
+        <p>
+            Future enhancement: Currently this design is not mobile responsive. We can make it mobile responsive.
+        </p>
+    </div>
+</body>
+
+</html>
